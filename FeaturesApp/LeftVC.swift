@@ -8,28 +8,53 @@
 
 import UIKit
 
-class LeftVC: UIViewController {
-
+class LeftVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tblView: UITableView!;
+    var titles = ["Home","Categories", "item2", "item3"];
+    var images = ["","news.png", "photo.png", "tag.png"];
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tblView.dataSource = self;
+        tblView.delegate = self;
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1;
     }
-    */
-
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if let cell = tblView.dequeueReusableCellWithIdentifier("menuCell") as? menuCell{
+            cell.lblTitle.text = titles[indexPath.row];
+            if indexPath.row != 0 {
+                cell.imgIcon.image = UIImage(named: images[indexPath.row]);
+            }else{
+                cell.imgIcon.hidden = true;
+            }
+            return cell;
+        }else
+        {
+            return UITableViewCell();}
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return titles.count
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("index=\(indexPath.row)")
+        if(indexPath.row == 0){
+            self.performSegueWithIdentifier("homeSegue", sender: self)
+        }
+        else if(indexPath.row == 1){
+            self.performSegueWithIdentifier("catSegue", sender: self)
+        }
+        
+    }
 }

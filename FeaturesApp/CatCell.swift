@@ -10,6 +10,7 @@ import UIKit
 
 class CatCell: UITableViewCell {
 
+    @IBOutlet weak var lblCat: UILabel!;
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

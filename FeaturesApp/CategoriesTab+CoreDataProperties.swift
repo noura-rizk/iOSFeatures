@@ -16,5 +16,6 @@ extension CategoriesTab {
 
     @NSManaged var arName: String?
     @NSManaged var enName: String?
+    @NSManaged var desc: String?
 
 }
