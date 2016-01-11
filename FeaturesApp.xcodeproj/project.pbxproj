@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1400CEF31C43B9CB00C891A8 /* ytVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1400CEF21C43B9CB00C891A8 /* ytVC.swift */; };
 		1405A8461C427D35005DD2D5 /* LeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405A8451C427D35005DD2D5 /* LeftVC.swift */; };
 		1405A8491C4281CA005DD2D5 /* menuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405A8481C4281CA005DD2D5 /* menuCell.swift */; };
 		1405A84D1C429DC9005DD2D5 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405A84C1C429DC9005DD2D5 /* CategoryVC.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1400CEF21C43B9CB00C891A8 /* ytVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytVC.swift; sourceTree = "<group>"; };
 		1405A8451C427D35005DD2D5 /* LeftVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftVC.swift; sourceTree = "<group>"; };
 		1405A8481C4281CA005DD2D5 /* menuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuCell.swift; sourceTree = "<group>"; };
 		1405A84C1C429DC9005DD2D5 /* CategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				14F21B9F1C3D3B23001FF9CC /* TransitController.swift */,
 				1405A8451C427D35005DD2D5 /* LeftVC.swift */,
 				1405A84C1C429DC9005DD2D5 /* CategoryVC.swift */,
+				1400CEF21C43B9CB00C891A8 /* ytVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				14F21B851C3D1B1B001FF9CC /* Categories.swift in Sources */,
 				1405A8531C42AABF005DD2D5 /* Items.swift in Sources */,
 				14F21B9D1C3D38D5001FF9CC /* PopTransitionAnimator.swift in Sources */,
+				1400CEF31C43B9CB00C891A8 /* ytVC.swift in Sources */,
 				14F21BA01C3D3B23001FF9CC /* TransitController.swift in Sources */,
 				1405A84F1C429F78005DD2D5 /* CatCell.swift in Sources */,
 				14F21B7F1C3D13D9001FF9CC /* HomeVC.swift in Sources */,

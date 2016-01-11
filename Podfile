@@ -4,6 +4,7 @@
  use_frameworks!
 
 target 'FeaturesApp' do
+pod 'YouTubePlayer'
 pod 'Alamofire', '~> 3.0'
 end
 

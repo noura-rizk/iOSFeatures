@@ -10,7 +10,7 @@ import UIKit
 
 class LeftVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tblView: UITableView!;
-    var titles = ["Home","Categories", "item2", "item3"];
+    var titles = ["Home","Categories", "Video", "item3"];
     var images = ["","news.png", "photo.png", "tag.png"];
     
     override func viewDidLoad() {
@@ -54,6 +54,8 @@ class LeftVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         }
         else if(indexPath.row == 1){
             self.performSegueWithIdentifier("catSegue", sender: self)
+        }else if (indexPath.row == 2){
+            self.performSegueWithIdentifier("vedioSegue", sender: self)
         }
         
     }
